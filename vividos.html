@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quandos dias eu vivi?</title>
+    <style>
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+    <script>
+    function calcular(){
+    var i = document.getElementById("idade").value;
+    var m = document.getElementById("mes").value;
+    
+    if(m == "jan"){
+        alert("Aproximadamente "+(parseInt(i)*365));
+    } else if(m == "fev"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30));
+    } else if(m == "mar"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*2));
+    } else if(m == "abr"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*3));
+    } else if(m == "mai"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*4));
+    } else if(m == "jun"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*5));
+    } else if(m == "jul"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*6));
+    } else if(m == "ago"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*7));
+    } else if(m == "set"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*8));
+    } else if(m == "out"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*9));
+    } else if(m == "nov"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*10));
+    } else if(m == "dez"){
+        alert("Aproximadamente "+((parseInt(i)*365)+30*11));
+    } 
+    }
+    </script>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center;">
+    <p>Insira a sua idade hoje:</p>
+    <input type="number" id="idade">
+    <p>Selecione o mês:</p>
+    <select id="mes">
+        <option value="jan">Janeiro</option>
+        <option value="fev">Fevereiro</option>
+        <option value="mar">Março</option>
+        <option value="abr">Abril</option>
+        <option value="mai">Maio</option>
+        <option value="jun">Junho</option>
+        <option value="jul">Julho</option>
+        <option value="ago">Agosto</option>
+        <option value="set">Setembro</option>
+        <option value="out">Outubro</option>
+        <option value="nov">Novembro</option>
+        <option value="dez">Dezembro</option>
+    </select>
+</br>
+</br>
+    <input type="submit" onclick="calcular()" value="Calcular">
+</body>
+</html>
